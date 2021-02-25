@@ -29,7 +29,7 @@ fi
 
 # Check that gmock is present.  Usually it is already there since the
 # directory is set up as an SVN external.
-if test ! -e gmock -o   && ! -e googlemock-release-1.7.0; then
+if test ! -e gmock  && ! -e googlemock-release-1.7.0; then
    echo "Google Mock not present.  Fetching gmock-1.7.0 from the web..."
    curl $curlopts -L -O https://github.com/google/googlemock/archive/release-1.7.0.zip
    unzip -q release-1.7.0.zip
